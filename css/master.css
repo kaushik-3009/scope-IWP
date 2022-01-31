@@ -1,0 +1,233 @@
+html { scroll-behavior: smooth; }
+
+body{
+ margin: 0;
+ font-family: 'Roboto', sans-serif;
+}
+h1,h2{
+  margin:0;
+}
+.landing{
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  height:100vh;
+  background-image: url('../images/campus-view1.jpg');
+  filter:grayscale(10%);
+
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+}
+.main-head{
+  font-size:5rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+  color:white;
+  text-shadow: 0.3rem 0.3rem black;
+
+
+}
+.sub-head{
+  font-size:3rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color:white;
+  text-shadow: 0.3rem 0.3rem black;
+
+}
+
+.arrow-container {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:75%;
+  left:50%;
+  transform: translate(-50%, -50%) rotateZ(0deg);
+}
+.arrow-container:hover {
+  cursor: pointer;
+}
+.arrow-container:hover .arrow {
+  top: 50%;
+}
+.arrow-container:hover .arrow:before {
+  transform: translate(-50%, -50%) rotateZ(-30deg);
+}
+.arrow-container:hover .arrow:after {
+  transform: translate(-50%, -50%) rotateZ(30deg);
+}
+.arrow {
+  position: absolute;
+  left: 50%;
+  transition: all 0.4s ease;
+}
+.arrow:before, .arrow:after {
+  transition: all 0.4s ease;
+  content: '';
+  display: block;
+  position: absolute;
+  transform-origin: bottom right;
+  background: #fff;
+  width: 4px;
+  height: 50px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+.arrow:after {
+  transform-origin: bottom left;
+  transform: translate(-50%, -50%) rotateZ(45deg);
+}
+.arrow:nth-child(1) {
+  opacity: 0.3;
+  top: 35%;
+}
+.arrow:nth-child(2) {
+  opacity: 0.6;
+  top: 55%;
+}
+.arrow:nth-child(3) {
+  opacity: 0.9;
+  top: 75%;
+}
+
+.about-us{
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 3rem;
+}
+.about-us-heading{
+  font-size: 2rem;
+  color: #1b39a8;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.description{
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1.15rem;
+}
+
+
+.programmes-wrapper{
+  background-color: #072227;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+
+  margin-top: 3rem;
+}
+.programmes-heading{
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.programmes-div{
+  display: flex;
+  width:80vw;
+  text-align: center;
+  margin: auto;
+  padding-top: 1rem;
+  justify-content: space-between;
+  color: white;
+}
+.card{
+  width: 24vw;
+  text-align: center;
+}
+.icon:hover{
+ outline:1px solid white;
+ outline-offset: 15px;
+ border-radius: 100%;
+}
+.card-heading{
+  padding-top: 1rem;
+  text-align:center;
+}
+.prog-details{
+  width: 90%;
+  text-align: justify;
+  margin: 1rem auto;
+  line-height: 1.5;
+}
+.admin{
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 3rem;
+}
+.admin-heading{
+  font-size: 2rem;
+  color: #1b39a8;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.admin-div{
+  display: flex;
+  width:60vw;
+  text-align: center;
+  margin: auto;
+  padding-top: 1rem;
+  justify-content: space-between;
+  color: black;
+}
+.admin-img{
+  width:22vw;
+  height: 65vh;
+}
+
+
+
+
+.faculty{
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+
+}
+.faculty-heading{
+  font-size: 2rem;
+  color: #1b39a8;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.faculty-div{
+  display: flex;
+  width:80vw;
+  text-align: center;
+  margin: auto;
+  padding-top: 1rem;
+
+  justify-content: space-between;
+  color: black;
+}
+.faculty-img{
+  width:20vw;
+  height: 60vh;
+  outline:2px solid black;
+  outline-offset: -2px;
+}
+footer {
+  text-align: center;
+  padding: 4rem 3rem 3rem 3rem;
+  background-color: #072227;
+  color: white;
+}

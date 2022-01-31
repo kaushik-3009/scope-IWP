@@ -9,30 +9,43 @@ h1,h2{
 }
 .landing{
   display: flex;
-  flex-direction: column;
   margin:0;
   height:100vh;
-  background-image: url('../images/campus-view1.jpg');
-  filter:grayscale(10%);
-
+  background-color:#0F0F0F;
+  color:white;
   background-size: cover;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
+  padding-right: 4rem;
+  padding-left: 4rem;
 }
+
+.div1{
+  display:flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.w1{
+  width:54%;
+}
+.w2{
+  width:46%;
+}
+.sec{
+  padding:1rem;
+}
+
 .main-head{
   font-size:5rem;
   font-weight: 500;
   letter-spacing: 4px;
-  color:white;
   text-shadow: 0.3rem 0.3rem black;
-
-
+text-align: left;
 }
 .sub-head{
   font-size:3rem;
   font-weight: 400;
   letter-spacing: 4px;
-  color:white;
   text-shadow: 0.3rem 0.3rem black;
 
 }
@@ -42,8 +55,9 @@ h1,h2{
   width: 100px;
   height: 100px;
   position: absolute;
-  top:75%;
+  /* top:75%; */
   left:50%;
+  bottom:-0.5rem;
   transform: translate(-50%, -50%) rotateZ(0deg);
 }
 .arrow-container:hover {
@@ -70,8 +84,8 @@ h1,h2{
   position: absolute;
   transform-origin: bottom right;
   background: #fff;
-  width: 4px;
-  height: 50px;
+  width: 0.25rem;
+  height: 1.8rem;
   border-radius: 10px;
   transform: translate(-50%, -50%) rotateZ(-45deg);
 }
@@ -106,7 +120,7 @@ h1,h2{
   color: #1b39a8;
   font-weight: 400;
   letter-spacing: 2px;
-  text-align: center;
+  text-align: right;
   padding-bottom: 1rem;
 }
 .description{
@@ -117,7 +131,7 @@ h1,h2{
 
 
 .programmes-wrapper{
-  background-color: #072227;
+  background-color: #0F0F0F;
   text-align: center;
   justify-content: center;
   margin: auto;
@@ -166,7 +180,22 @@ h1,h2{
   text-align: center;
   justify-content: center;
   margin: auto;
-  padding-top: 3rem;
+  padding:2.25rem 3rem 0 3rem;
+  margin-bottom:3rem;
+}
+.admin1{
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding:1rem 3rem;
+  margin-bottom:1rem;
+}
+.admin2{
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding:1rem 3rem;
+  margin-bottom:1rem;
 }
 .admin-heading{
   font-size: 2rem;
@@ -184,7 +213,15 @@ h1,h2{
   padding-top: 1rem;
   justify-content: space-between;
   color: black;
+
 }
+
+.admin-text{
+  width:60vw;
+  text-align: center;
+  margin: auto;
+}
+
 .admin-img{
   width:22vw;
   height: 65vh;
@@ -199,7 +236,9 @@ h1,h2{
   margin: auto;
   padding-top: 4rem;
   padding-bottom: 3rem;
-
+  background-image: url('../images/campus-view1.jpg');
+  background-size:cover;
+  color:white;
 }
 .faculty-heading{
   font-size: 2rem;
@@ -217,17 +256,27 @@ h1,h2{
   padding-top: 1rem;
 
   justify-content: space-between;
-  color: black;
 }
 .faculty-img{
   width:20vw;
   height: 60vh;
   outline:2px solid black;
   outline-offset: -2px;
+  margin-bottom: 0;
+}
+
+.faculty-text{
+  width:20vw;
+  margin:0 auto auto auto;
+  padding:1rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+p{
+  margin-bottom:0;
 }
 footer {
   text-align: center;
-  padding: 4rem 3rem 3rem 3rem;
-  background-color: #072227;
+  padding: 2rem 0;
+  background-color:#0F0F0F;
   color: white;
 }
